@@ -1,0 +1,19 @@
+.steam {
+    width: 20px;
+    height: 20px;
+}
+
+body {
+    background-color: rgb(158, 140, 240);
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    border-color: black;
+}
