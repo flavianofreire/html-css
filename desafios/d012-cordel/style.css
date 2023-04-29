@@ -77,6 +77,7 @@ p {
   background-position: center right;
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: inset 0px 7px 12px 0px #0000007d;
 }
 
 #paragrafo-4 {
@@ -84,6 +85,7 @@ p {
   background-position: center left;
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: inset 0px 7px 12px 0px #0000007d;
 }
 
 .espaco-entre-versos {
