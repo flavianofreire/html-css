@@ -9,32 +9,29 @@
 }
 
 body {
-  width: 100%;
+  min-height: 100vh;
   background-color: #ffffff;
 }
 
 header {
-  height: 16em;
   background-color: #000000;
   color: #ffffff;
-  text-align: center;
   padding: 50px;
 }
 
 h1 {
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 10vw;
   font-family: "Passion One", cursive;
   font-weight: bold;
-  font-size: 90px;
-}
-
-span {
-  font-size: 127px;
 }
 
 nav p {
-  font-size: 1em;
   font-family: verdana;
   color: #ffffff;
+  font-size: 1em;
+  text-align: center;
 }
 
 a {
@@ -46,15 +43,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 section {
   margin: 5em 0 5em 0;
   padding-bottom: 6em;
 }
 
 p {
+  font-size: 3vw;
   margin-left: 0.7em;
   font-family: "Sriracha", cursive;
-  font-size: 44px;
   line-height: 2;
   color: #000000;
 }
@@ -100,6 +98,6 @@ footer {
 footer > p {
   text-align: center;
   font-family: verdana;
-  font-size: 1em;
   color: #ffffff;
+  font-size: 1em;
 }
