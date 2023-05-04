@@ -9,7 +9,16 @@
 
   <style>
     table {
+      width: 500px;
+      position: relative;
       border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgray;
     }
 
     tfoot,
@@ -17,9 +26,24 @@
       background-color: darkgray;
     }
 
+    thead tr th {
+      position: sticky;
+      top: -1px;
+      background-color: darkgray;
+    }
+
+    tbody > tr:nth-child(odd) {
+      /* 2n-1 */
+      background-color: #fff;
+    }
+
+    tbody > tr:nth-child(even) {
+      /* 2n */
+      background-color: lightgray;
+    }
+
     td,
     th {
-      width: 150px;
       padding: 10px;
       border: solid 1px black;
     }
@@ -33,6 +57,7 @@
     <!-- 
       ANATOMIA PARA TABELAS GANDES
       TABLE
+        CAPTION
         THEAD
           TR, TD TH
         TBODY
@@ -42,10 +67,13 @@
     -->
 
     <table>
+      <caption>
+        População das Unidades Federativas
+      </caption>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 100px">População</th>
         </tr>
       </thead>
 
@@ -187,7 +215,7 @@
       </tbody>
 
       <tfoot>
-        <th>Total</th>
+        <th scope="row">Total</th>
         <td class="população">??????</td>
       </tfoot>
     </table>
