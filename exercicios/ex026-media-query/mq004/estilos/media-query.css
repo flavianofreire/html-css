@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Devices Breakpoints
+------------------------------
+Para Celulares: 320px / 480px
+Ipads e Tablets: 481px / 768px
+laptops e telas pequenas: 769px / 1024px
+Telas grandes e Desktops: 1025px / 1200px
+TV e Telas muito grande: 1201px...  
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  main {
+    width: 600px;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1499px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  main {
+    width: 800px;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: block;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  main {
+    width: 1000px;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: block;
+  }
+}
+
+@media print {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    color: #000000;
+  }
+
+  main {
+    width: 80vw;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  body::after {
+    content: "Essa impressão foi feita para o cursoemvideo.com";
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: block;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
